@@ -1,0 +1,33 @@
+Voting app
+
+Model
+Endpoints/Routes
+
+1. user sign in / sign up
+2. see the list of candidates 
+3. vote one of the candidate only
+4. Live voting status of each party
+5. user must contain one unique government id: aadhar card number
+6. There should be an admin who maitains the list of candidates and he will be not able to vote
+7. user can change their passwords
+8. admins cant't vote at all
+
+
+Routes
+
+user authentication
+
+1. /signup: POST - create a new user
+2. /login: POST - Login to the existing account
+3. /candidates: GET - get the details and of all the candidates
+4. /vote/:candidateID: POST - vote for a specific candidate
+5. /vote/counts: GET - get the list of candidates sorted by their vote counts.
+6. /profile: GET - get the profile of the user
+7. /profile/password: PUT - Change their existing password
+
+
+
+Admin candidate management
+1. /candidates: POST - Create a new candidate 
+2. /candidates/:candidateID: PUT - Update a candidate for the list
+3. /candidates/:candidateID: DELETE - Delete a candidate from the given list
